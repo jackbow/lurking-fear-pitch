@@ -21,7 +21,7 @@
     window.document.body.classList.toggle('noscroll');
   };
 
-  const updateClass = (y: number) => {
+  const updateClass = (y: number): 'show' | 'hide' | boolean => {
     const dy = lastY - y;
     lastY = y;
     if (y < offset) {
@@ -35,6 +35,7 @@
     }
   };
 
+  // let showHeader = $derived(updateClass(y) === 'show');
   $effect(() => {
     showHeader = updateClass(y) === 'show';
   });
