@@ -80,7 +80,7 @@
 <section id="crew">
   <div class="flex flex-col flex-wrap items-center justify-center bg-black text-white">
     <h2 class="text-8xl font-sans font-extrabold pt-20 self-start pl-20">Production Crew</h2>
-    <div class="px-20 flex justify-around flex-wrap gap-12 p-12">
+    <div class="flex justify-around flex-wrap gap-12 pt-12">
       {#each crew as { name, role, bio, avif, webp, jpg, object_area }}
         <div class="h-fit w-1/4">
           <Picture class="h-[30rem] w-full object-cover object-{object_area}" {avif} {webp} {jpg} alt={name} />
