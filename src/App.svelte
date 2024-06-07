@@ -5,6 +5,7 @@
   import Plan from './lib/Plan.svelte';
   import StoryApproach from './lib/StoryApproach.svelte';
   import MarketAnalysis from './lib/MarketAnalysis.svelte';
+  import Crew from './lib/Crew.svelte';
 </script>
 
 <Header />
@@ -14,6 +15,7 @@
   <Plan />
   <StoryApproach />
   <MarketAnalysis />
+  <Crew />
 </main>
 
 <style>
