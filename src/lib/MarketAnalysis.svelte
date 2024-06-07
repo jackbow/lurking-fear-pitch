@@ -6,6 +6,7 @@
   import crip_camp_webp from '~/assets/images/crip_camp.webp';
   import crip_camp_jpg from '~/assets/images/crip_camp.jpg';
   import Picture from './Picture.svelte';
+  import Icon from './Icon.svelte';
 </script>
 
 <section id="market-analysis" class="h-[40rem] grid justify-start bg-black text-white pt-8 px-20">
@@ -57,17 +58,28 @@
       <div class="relative z-10 font-bold space-y-4">
         <p class="text-white text-xl">
           <em>
-            By any metric, the stories of people with disabilities are among the least represented in film and
-            television. Last year, USC Annenberg's annual inequality report found that, of the 4,445 characters in the
-            most popular movies of 2018, just 1.6% were shown with a disability. U.S. census figures estimate 27.2% of
-            Americans have some form of disability.
+            By any metric, the stories of people with disabilities <a
+              href="https://apnews.com/910abfe1b02c416eb60c76cbb897bdc1"
+              >are among the least represented in film and television. <Icon
+                name="external-link"
+                class="inline-block"
+              /></a
+            >
+            Last year, USC Annenberg's
+            <a href="assets.uscannenberg.org/docs/aii-inequality-report-2019-09-03.pdf"
+              >annual inequality report <Icon name="external-link" class="inline-block" /></a
+            > found that, of the 4,445 characters in the most popular movies of 2018, just 1.6% were shown with a disability.
+            U.S. census figures estimate 27.2% of Americans have some form of disability.
           </em>
         </p>
         <p class="text-white text-xl">
           <em>
-            A 2019 study by the Ruderman Family Foundation found that about half of U.S. households favor authentic
-            portrayals of actors with disabilities. Yet Hollywood, where villains are still regularly signaled by
-            deformity, has a long history of unfavorable, stereotyped or inauthentic depictions of disability.
+            A <a
+              href="https://rudermanfoundation.org/white_papers/disability-inclusion-in-movies-and-television-market-research-2019/"
+              >2019 study by the Ruderman Family Foundation <Icon name="external-link" class="inline-block" /></a
+            > found that about half of U.S. households favor authentic portrayals of actors with disabilities. Yet Hollywood,
+            where villains are still regularly signaled by deformity, has a long history of unfavorable, stereotyped or inauthentic
+            depictions of disability.
           </em>
         </p>
       </div>
@@ -119,5 +131,9 @@
   #market-analysis {
     grid-template-columns: 66% 33%;
     grid-template-rows: 8rem 1fr;
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
   }
 </style>
