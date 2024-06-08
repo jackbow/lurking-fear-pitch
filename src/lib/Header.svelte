@@ -42,14 +42,14 @@
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerWidth={width} />
-<div
+<button
   id="blur-filter"
   class="z-10 h-full w-1/3 fixed transition-all duration-300"
   class:open={navMenuOpen}
   onclick={() => {
     toggleNavMenu();
   }}
-/>
+></button>
 <div
   id="nav-menu"
   class="fixed transition-all duration-300 top-0 w-2/3 h-full z-20 flex flex-col items-center justify-center"
@@ -77,10 +77,10 @@
   class:nav-closed={!navMenuOpen}
 >
   {#if width >= 768}
-    <spacer />
+    <spacer></spacer>
   {/if}
   <!-- <a href="#home" in:fly={{ y: -100, duration: 1000, delay: 0 }}> home </a> -->
-  <spacer class="flex-grow" />
+  <spacer class="flex-grow"></spacer>
   {#if width < 768}
     {#key navMenuOpen}
       <button
@@ -89,7 +89,7 @@
           toggleNavMenu();
         }}
       >
-        <Icon name={navMenuOpen ? 'close' : 'menu'} classes="text-gray-400 text-5xl z-30 cursor-pointer right-0" />
+        <Icon name={navMenuOpen ? 'close' : 'menu'} class="text-gray-400 text-5xl z-30 cursor-pointer right-0" />
       </button>
     {/key}
   {:else}
@@ -102,11 +102,11 @@
         <p class="inline text-white">{section}</p>
       </a>
     {/each}
-    <spacer />
+    <spacer></spacer>
   {/if}
 </div>
 
-<style>
+<style lang="stylus">
   :global(body.noscroll) {
     overflow: hidden;
   }
