@@ -7,7 +7,7 @@
     <p>
       We want to see a different kind of hero in the world of adventure storytelling. It's time for a cultural shift.
     </p>
-    <p>Let's create it.</p>
+    <p>Let's create it together.</p>
   </div>
   <givebutter-widget id={import.meta.env.VITE_GIVE_BUTTER_WIDGET_ID}></givebutter-widget>
 </section>
