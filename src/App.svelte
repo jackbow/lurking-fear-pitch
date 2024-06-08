@@ -7,6 +7,7 @@
   import MarketAnalysis from './lib/MarketAnalysis.svelte';
   import Crew from './lib/Crew.svelte';
   import Budget from './lib/Budget.svelte';
+  import Donate from './lib/Donate.svelte';
 </script>
 
 <Header />
@@ -18,6 +19,7 @@
   <MarketAnalysis />
   <Crew />
   <Budget />
+  <Donate />
 </main>
 
 <style>
