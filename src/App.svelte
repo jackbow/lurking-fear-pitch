@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Header from './lib/Header.svelte';
+  import Nav from './lib/Nav.svelte';
   import Hero from './lib/Hero.svelte';
   import Melissa from './lib/Melissa.svelte';
   import Plan from './lib/Plan.svelte';
@@ -10,7 +10,7 @@
   import Donate from './lib/Donate.svelte';
 </script>
 
-<Header sections={['Story', 'Melissa', 'Plan', 'Crew', 'Budget', 'Donate']} />
+<Nav sections={['Story', 'Melissa', 'Plan', 'Crew', 'Budget', 'Donate']} />
 <main>
   <Hero />
   <Melissa />

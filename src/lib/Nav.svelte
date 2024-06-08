@@ -11,7 +11,7 @@
   } = $props();
 
   let width: number = $state(0);
-  let showHeader = $state(true);
+  let showNav = $state(true);
   let y = $state(0);
   let lastY = $state(0);
   let navMenuOpen = $state(false);
@@ -21,22 +21,18 @@
     window.document.body.classList.toggle('noscroll');
   };
 
-  const updateClass = (y: number): 'show' | 'hide' | boolean => {
+  $effect(() => {
     const dy = lastY - y;
     lastY = y;
     if (y < offset) {
-      return 'show';
+      showNav = true;
     } else if (Math.abs(dy) <= tolerance) {
-      return showHeader;
+      return;
     } else if (dy < 0) {
-      return 'hide';
+      showNav = false;
     } else {
-      return 'show';
+      showNav = true;
     }
-  };
-
-  $effect(() => {
-    showHeader = updateClass(y) === 'show';
   });
 </script>
 
@@ -71,7 +67,7 @@
 <div
   id="header"
   class="-translate-y-full transform transition-transform duration-300 flex items-center justify-center gap-4 fixed top-0 w-full z-20"
-  class:show={showHeader}
+  class:show={showNav}
   class:at-top={y > 50}
   class:nav-closed={!navMenuOpen}
 >
@@ -108,7 +104,7 @@
       @apply translate-y-0;
     }
     &.nav-closed {
-      @apply bg-black bg-opacity-50;
+      @apply bg-black bg-opacity-60;
       /* @apply backdrop-blur-lg backdrop-filter bg-black bg-opacity-10; */
       &.at-top {
         @apply shadow-lg;
