@@ -17,4 +17,5 @@ Nice to have
 - [ ] use prettier/eslint
 - [ ] figure out if sveltekit is better for SEO (ssr for crawlers...)
 - [ ] parallax text / image scrolling?
+  - https://codepen.io/openmindculture/pen/wvQevbd
 - [ ] social previews

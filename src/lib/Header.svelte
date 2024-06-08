@@ -54,7 +54,7 @@
   class="fixed transition-all duration-300 top-0 w-2/3 h-full z-20 flex flex-col items-center justify-center"
   class:open={navMenuOpen}
 >
-  {#each sections as section, index}
+  {#each sections as section}
     <div class="font-sans flex-col flex items-center text-md">
       <a
         onclick={() => {
@@ -87,7 +87,7 @@
       </button>
     {/key}
   {:else}
-    {#each sections as section, index}
+    {#each sections as section}
       <a href={`#${section.toLowerCase()}`} class="text-xs font-sans py-2 hover:text-gray-400 transition duration-300">
         <p class="inline text-white">{section}</p>
       </a>
