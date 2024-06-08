@@ -5,26 +5,24 @@
   import melissa_1_webp from '~/assets/images/melissa_1.webp';
   import melissa_1_avif from '~/assets/images/melissa_1.avif';
   import melissa_1_jpg from '~/assets/images/melissa_1.jpg';
-  // import melissa_2_webp from '~/assets/images/melissa_2.webp';
-  // import melissa_2_avif from '~/assets/images/melissa_2.avif';
-  // import melissa_2_jpg from '~/assets/images/melissa_2.jpg';
   import melissa_3_webp from '~/assets/images/melissa_3.webp';
   import melissa_3_avif from '~/assets/images/melissa_3.avif';
   import melissa_3_jpg from '~/assets/images/melissa_3.jpg';
   import melissa_5_webp from '~/assets/images/melissa_5.webp';
   import melissa_5_avif from '~/assets/images/melissa_5.avif';
   import melissa_5_jpg from '~/assets/images/melissa_5.jpg';
-  // import melissa_6_webp from '~/assets/images/melissa_6.webp';
-  // import melissa_6_avif from '~/assets/images/melissa_6.avif';
-  // import melissa_6_jpg from '~/assets/images/melissa_6.jpg';
   import Picture from './Picture.svelte';
 </script>
 
-<section id="story" class=" min-h-fit bg-black text-gray-100 pt-20 pl-40 space-y-20">
+<section id="story" class="min-h-fit bg-black text-gray-100 pt-20 xl:pl-40 space-y-20">
   <!-- "Story" -->
-  <div class="container justify-items-end grid items-center gap-2 h-full">
-    <div class="picture-left">
-      <!-- TODO: mobile layout using object-cover/center -->
+  <div
+    class="relative container px-0 sm:px-8 xl:px-0 mx-auto max-w-screen-md xl:max-w-max justify-items-end flex flex-col justify-center xl:grid items-center gap-0 xl:gap-2 h-full"
+  >
+    <h2 class="text-8xl font-bold mb-4 xl:hidden place-content-start self-start pl-4 -top-16 absolute xl:static">
+      Story
+    </h2>
+    <div class="picture-left px-8 md:px-0">
       <Picture
         class="object-cover object-center"
         avif={story_avif}
@@ -34,16 +32,10 @@
       />
     </div>
     <div
-      class="content-right space-y-4 place-content-start mr-40 self-start z-2 p-5 md:z-auto px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0"
+      class="content-right space-y-4 xl:place-content-start self-start z-2 md:z-auto 2xs:px-4 xs:px-8 md:px-0 pr-0 xl:pr-16 xl:pr-28"
     >
-      <h2 class="text-8xl font-bold mb-4">Story</h2>
-      <!-- <p>
-        Melissa Ruiz is a 28-year-old rock climber with cerebral palsy. She competes at the highest levels in
-        paraclimbing, having just won silver at the 2023 IFSC World Championship- but she's not satisfied to stay
-        indoors. Melissas next venture will be to climb the route 'Lurking Fear' on El Capitan: the tallest, sheerest
-        granite cliff in the world. Melissa will be the first person with Cerebral Palsy to lead this climb.
-      </p> -->
-      <span class="space-y-2">
+      <h2 class="text-8xl font-bold mb-4 hidden xl:block">Story</h2>
+      <div class="space-y-2 bg-black bg-opacity-50 p-0 xl:p-2 font-normal">
         <p>
           Melissa Ruiz is one of the best paraclimbers in the world. She put a harness on for the first time in 2018 and
           she's already competing at the highest levels of the sport, having just won silver at the 2023 IFSC World
@@ -55,7 +47,7 @@
           tallest, sheerest granite cliff in the world.
         </p>
         <p>If she succeeds, Melissa will be the first person with cerebral palsy to lead this climb.</p>
-      </span>
+      </div>
     </div>
   </div>
   <!-- "Meet Melissa" -->
@@ -63,8 +55,6 @@
 <section id="melissa" class="bg-black text-gray-100 pt-20 pl-40 space-y-20">
   <div class="container justify-items-end grid gap-2 w-full h-[80rem] items-start">
     <div class="col-start-8 col-span-6 row-start-1 row-span-8 z-10">
-      <!-- <div class="picture-right"> -->
-      <!-- TODO: mobile layout using object-cover/center -->
       <Picture
         class="object-cover object-center"
         avif={melissa_1_avif}
@@ -74,10 +64,10 @@
       />
     </div>
     <div
-      class="content-left space-y-2 place-content-start mr-40 z-20 p-5 md:z-20 px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0"
+      class="content-left space-y-2 place-content-start md:mr-40 z-20 p-5 md:z-20 px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0"
     >
       <h2 class="text-8xl font-bold mb-4">Meet Melissa</h2>
-      <span class="space-y-2">
+      <span class="space-y-2 font-normal">
         <p>
           Melissa's cerebral palsy mostly affects her legs, her core, her vision… and her memory (she's actually not
           sure if that last one is the CP, or just her). Movies take too long and it's hard to follow the plot, so she
@@ -92,7 +82,6 @@
       </span>
     </div>
     <div class="col-start-1 col-span-8 row-start-7 row-span-7 z-0 pr-8">
-      <!-- TODO: mobile layout using object-cover/center -->
       <Picture
         class="object-cover object-center"
         avif={melissa_3_avif}
@@ -101,17 +90,6 @@
         alt="Portrait of Melissa Ruiz"
       />
     </div>
-    <!-- TODO: mobile layout using object-cover/center -->
-    <!-- <div class="col-start-7 col-span-4 row-start-7 row-span-6 z-30 pt-12">
-      <Picture
-        class="object-cover object-center"
-        avif={melissa_2_avif}
-        webp={melissa_2_webp}
-        jpg={melissa_2_jpg}
-        alt="Portrait of Melissa Ruiz"
-      />
-    </div> -->
-    <!-- TODO: mobile layout using object-cover/center -->
     <div class="col-start-6 col-span-5 row-start-11 row-span-7 z-20">
       <Picture
         class="object-cover object-center"
@@ -121,53 +99,25 @@
         alt="Portrait of Melissa Ruiz"
       />
     </div>
-    <!-- TODO: add more photos? -->
-    <!-- TODO: mobile layout using object-cover/center -->
-    <!-- <div class="col-start-7 col-span-4 row-start-7 row-span-6 z-0 pt-12">
-      <Picture
-        class="object-cover object-center"
-        avif={melissa_5_avif}
-        webp={melissa_5_webp}
-        jpg={melissa_5_jpg}
-        alt="Portrait of Melissa Ruiz"
-      />
-    </div> -->
   </div>
 </section>
 
 <style lang="stylus">
 .container {
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-}
-.container-2 {
   grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
 }
 .content-right {
-  grid-area: 1 / 1 / -1 / -1;
-  @media (min-width: 768px) {
-    // @apply text-right;
     grid-area: 1 / 9 / -1 / -1;
-  }
 }
 .content-left {
-  grid-area: 1 / 1 / -1 / -1;
-  @media (min-width: 768px) {
     grid-area: 2 / 2 / -1 / 11;
-  }
 }
 .picture-right {
-  grid-area: 1 / 1 / -1 / -1;
-  @media (min-width: 768px) {
     grid-area: 1 / 6 / 10 / 15;
-  }
 }
 .picture-left {
-  grid-area: 1 / 1 / -1 / -1;
-  @media (min-width: 768px) {
     grid-area: 3 / 1 / -1 / 12;
-  }
 }
 .content-desc {
   @media (min-width: 768px) {

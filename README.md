@@ -4,12 +4,15 @@
 
 Need
 
+- [ ] domain, env vars in prod, social image
+- [ ] favicon
 - [ ] remove unused styles from story.svelte
 - [ ] mobile layout
-- [ ] section buttons in middle of hero? + fix nav bar / mobile hamburger menu
-- [ ] fonts
+- [x] section buttons in middle of hero? + fix nav bar / mobile hamburger menu
+- [x] fonts
+  - different fonts?
 - [ ] normalize h1, h2, p sizes & padding between paragraphs/headers (can be set in app.postcss, also main gap/padding/spacing...)
-- [ ] redo nav & section names
+- [x] redo nav & section names
 
 Nice to have
 

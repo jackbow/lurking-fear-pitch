@@ -19,3 +19,17 @@
   font-style: normal;
   font-weight: 900;
 }
+.xl-text {
+  font-size: clamp(2rem, 11vw, 6rem);
+  line-height: clamp(2rem, 11vw, 6rem);
+}
+.lg-text {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  line-height: clamp(1.5rem, 5vw, 3rem);
+}
+h1 {
+  @apply xl-text;
+}
+h2 {
+  @apply lg-text;
+}

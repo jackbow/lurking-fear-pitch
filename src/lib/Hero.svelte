@@ -15,8 +15,8 @@
   fetchpriority="high"
 />
 <div
-  class="text-white absolute top-0 text-center left-0 w-full h-full bg-black bg-opacity-30 flex flex-col justify-center items-center gap-8 pb-32 space-y-0"
+  class="text-white absolute top-0 text-center left-0 w-full h-screen bg-black bg-opacity-30 flex flex-col justify-center items-center gap-4"
 >
-  <h1 class="text-9xl josefin-sans">LURKING FEAR</h1>
-  <h2 class="text-4xl opacity-60 cardo">THE MELISSA RUIZ STORY</h2>
+  <h1 class="josefin-sans">LURKING FEAR</h1>
+  <h2 class="opacity-70 cardo">THE MELISSA RUIZ STORY</h2>
 </div>
