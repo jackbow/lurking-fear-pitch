@@ -17,7 +17,7 @@
 </script>
 
 <section id="budget">
-  <div class="flex flex-col flex-wrap justify-center items-center bg-black text-white px-20">
+  <div class="flex flex-col flex-wrap justify-center items-center bg-black text-white px-20 pb-24">
     <h2 class="text-8xl font-sans font-extrabold pt-20">Budget</h2>
     <!-- <div class="overflow-x-auto w-1/3 text-white">
       <table class="table text-white">
