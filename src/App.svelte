@@ -6,6 +6,7 @@
   import StoryApproach from './lib/StoryApproach.svelte';
   import MarketAnalysis from './lib/MarketAnalysis.svelte';
   import Crew from './lib/Crew.svelte';
+  import Budget from './lib/Budget.svelte';
 </script>
 
 <Header />
@@ -16,10 +17,11 @@
   <StoryApproach />
   <MarketAnalysis />
   <Crew />
+  <Budget />
 </main>
 
 <style>
-  div {
+  main {
     font-family: 'Cardo-Bold' serif;
     font-weight: 800;
     font-feature-settings: 'wdth' 150;

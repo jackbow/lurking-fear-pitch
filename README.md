@@ -8,7 +8,7 @@ Need
 - [ ] mobile layout
 - [ ] section buttons in middle of hero? + fix nav bar / mobile hamburger menu
 - [ ] fonts
-- [ ] normalize h1, h2, p sizes & padding between paragraphs/headers
+- [ ] normalize h1, h2, p sizes & padding between paragraphs/headers (can be set in app.postcss, also main gap/padding/spacing...)
 - [ ] redo nav & section names
 
 Nice to have
