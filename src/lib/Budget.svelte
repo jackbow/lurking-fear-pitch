@@ -70,7 +70,7 @@
             {/each}
           </tbody>
           <tfoot>
-            <tr>
+            <!-- <tr>
               <th
                 scope="row"
                 colspan="1"
@@ -94,7 +94,7 @@
                 >Amount Raised</th
               >
               <td class="pl-3 pr-4 pt-6 text-right text-xl text-gray-300 sm:pr-0">{usd(amount_raised)}</td>
-            </tr>
+            </tr> -->
             <tr>
               <th
                 scope="row"

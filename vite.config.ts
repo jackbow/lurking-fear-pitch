@@ -7,7 +7,15 @@ export default defineConfig({
   plugins: [svelte()],
   resolve: {
     alias: {
-      "~": path.resolve(__dirname, "./src"),
+      "~": path.resolve("./src"),
+    },
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://api.givebutter.com',
+        changeOrigin: true,
+      },
     },
   },
 })
