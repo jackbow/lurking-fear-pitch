@@ -1,10 +1,11 @@
 <script lang="ts">
-  import { fly } from 'svelte/transition';
   import Icon from './Icon.svelte';
   let {
+    sections,
     offset = 50,
     tolerance = 0,
   }: {
+    sections: string[];
     offset?: number;
     tolerance?: number;
   } = $props();
@@ -15,7 +16,6 @@
   let lastY = $state(0);
   let navMenuOpen = $state(false);
 
-  const sections = ['Story', 'Plan', 'Team', 'Budget', 'Schedule', 'Donate'];
   const toggleNavMenu = () => {
     navMenuOpen = !navMenuOpen;
     window.document.body.classList.toggle('noscroll');
@@ -35,7 +35,6 @@
     }
   };
 
-  // let showHeader = $derived(updateClass(y) === 'show');
   $effect(() => {
     showHeader = updateClass(y) === 'show';
   });
@@ -71,16 +70,11 @@
 </div>
 <div
   id="header"
-  class="-translate-y-full transform transition-transform duration-300 flex items-center fixed top-0 w-full z-20"
+  class="-translate-y-full transform transition-transform duration-300 flex items-center justify-center gap-4 fixed top-0 w-full z-20"
   class:show={showHeader}
   class:at-top={y > 50}
   class:nav-closed={!navMenuOpen}
 >
-  {#if width >= 768}
-    <spacer></spacer>
-  {/if}
-  <!-- <a href="#home" in:fly={{ y: -100, duration: 1000, delay: 0 }}> home </a> -->
-  <spacer class="flex-grow"></spacer>
   {#if width < 768}
     {#key navMenuOpen}
       <button
@@ -94,11 +88,7 @@
     {/key}
   {:else}
     {#each sections as section, index}
-      <a
-        href={`#${section.toLowerCase()}`}
-        class="text-xs font-sans py-2 hover:text-gray-400 transition duration-300"
-        in:fly={{ y: -100, duration: 1000, delay: index * 100 }}
-      >
+      <a href={`#${section.toLowerCase()}`} class="text-xs font-sans py-2 hover:text-gray-400 transition duration-300">
         <p class="inline text-white">{section}</p>
       </a>
     {/each}

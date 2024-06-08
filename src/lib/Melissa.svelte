@@ -59,6 +59,8 @@
     </div>
   </div>
   <!-- "Meet Melissa" -->
+</section>
+<section id="melissa" class="bg-black text-gray-100 pt-20 pl-40 space-y-20">
   <div class="container justify-items-end grid gap-2 w-full h-[80rem] items-start">
     <div class="col-start-8 col-span-6 row-start-1 row-span-8 z-10">
       <!-- <div class="picture-right"> -->

@@ -10,7 +10,7 @@
   import Donate from './lib/Donate.svelte';
 </script>
 
-<Header />
+<Header sections={['Story', 'Melissa', 'Plan', 'Crew', 'Budget', 'Donate']} />
 <main>
   <Hero />
   <Melissa />
