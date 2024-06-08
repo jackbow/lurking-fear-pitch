@@ -47,7 +47,7 @@
 ></button>
 <div
   id="nav-menu"
-  class="fixed transition-all duration-300 top-0 w-2/3 h-full z-20 flex flex-col items-center justify-center"
+  class="fixed transition-all duration-300 top-0 w-2/3 h-full z-20 flex flex-col items-center justify-center bg-black opacity-90"
   class:open={navMenuOpen}
 >
   {#each sections as section}
@@ -57,7 +57,7 @@
           toggleNavMenu();
         }}
         href={`#${section.toLowerCase()}`}
-        class="hover:text-gray-400 transition duration-300"
+        class="hover:text-gray-200 transition duration-300"
       >
         <p class="inline text-white text-lg">{section}</p>
       </a>
@@ -67,24 +67,31 @@
 <div
   id="header"
   class="-translate-y-full transform transition-transform duration-300 flex items-center justify-center gap-4 fixed top-0 w-full z-20"
-  class:show={showNav}
+  class:show={showNav || width < 768}
   class:at-top={y > 50}
   class:nav-closed={!navMenuOpen}
 >
   {#if width < 768}
     {#key navMenuOpen}
+      <spacer class="flex-grow"></spacer>
       <button
         aria-label="open menu"
         onclick={() => {
           toggleNavMenu();
         }}
+        class="bg-black bg-opacity-80 p-1 rounded transition duration-3"
       >
-        <Icon name={navMenuOpen ? 'close' : 'menu'} class="text-gray-400 text-5xl z-30 cursor-pointer right-0" />
+        <Icon
+          name={navMenuOpen ? 'close' : 'menu'}
+          height={36}
+          width={36}
+          class="text-white z-30 cursor-pointer right-0"
+        />
       </button>
     {/key}
   {:else}
     {#each sections as section}
-      <a href={`#${section.toLowerCase()}`} class="text-xs font-sans py-2 hover:text-gray-400 transition duration-300">
+      <a href={`#${section.toLowerCase()}`} class="text-xs font-sans py-2 hover:text-gray-200 transition duration-300">
         <p class="inline text-white">{section}</p>
       </a>
     {/each}
@@ -104,17 +111,17 @@
       @apply translate-y-0;
     }
     &.nav-closed {
-      @apply bg-black bg-opacity-60;
-      /* @apply backdrop-blur-lg backdrop-filter bg-black bg-opacity-10; */
-      &.at-top {
-        @apply shadow-lg;
+      @media (min-width: 768px) {
+        @apply bg-black bg-opacity-60;
+        &.at-top {
+          @apply shadow-lg;
+        }
       }
     }
   }
   #blur-filter {
     left: -100%;
     &.open {
-      @apply: backdrop-filter backdrop-blur-lg left-0;
       /* @apply bg-black bg-opacity-50; */
     }
   }
