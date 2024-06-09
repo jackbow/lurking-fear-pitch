@@ -77,17 +77,19 @@
   ];
 </script>
 
-<section id="crew">
-  <div class="flex flex-col flex-wrap items-center justify-center bg-black text-white">
-    <h2 class="text-8xl font-sans font-extrabold pt-20 self-start pl-20">Production Crew</h2>
-    <div class="flex justify-around flex-wrap gap-12 pt-12">
+<section id="crew" class="bg-black text-white">
+  <div class="flex flex-col flex-wrap items-center justify-center px-4 md:px-8 lg:px-20 mx-auto">
+    <h2 class="text-5xl sm:text-5xl md:text-6xl lg:text-8xl font-sans font-extrabold pt-20 self-start">
+      Production Crew
+    </h2>
+    <div class="flex justify-around flex-wrap gap-12 pt-4 md:pt-8 lg:pt-12">
       {#each crew as { name, role, bio, avif, webp, jpg, object_area }}
-        <div class="h-fit w-1/4">
+        <div class="h-fit w-full sm:w-2/3 lg:w-1/3 xl:w-1/4">
           <Picture class="h-[30rem] w-full object-cover object-{object_area}" {avif} {webp} {jpg} alt={name} />
           <div class="p-8 border-white border border-t-0">
             <h3 class="text-2xl font-extrabold">{name}</h3>
             <h3 class="text-lg pb-4">{role}</h3>
-            <p>
+            <p class="font-normal">
               {bio}
             </p>
           </div>
