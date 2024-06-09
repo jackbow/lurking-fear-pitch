@@ -52,7 +52,7 @@
       class="text-white text-left absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex flex-col justify-center items-center font-extrabold gap-8"
     >
       <div class="flex flex-col items-center mr-4 sm:mr-8 md:mr-12 lg:mr-32 w-2/3 xl:w-3/5 mx-auto">
-        <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl capitalize opacity-50 text-left self-start">
+        <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl capitalize opacity-50 text-left self-start">
           EL CAPITAN
         </h2>
         <span class="opacity-80 text-lg space-y-2 pl-1 xl:pl-2">
@@ -76,7 +76,7 @@
   </section>
   <section class="bg-black text-white py-16">
     <div class="flex items-start w-full px-4 sm:px-8 md:px-0 md:w-5/6 mx-auto flex-col">
-      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold">Jugging El Cap</h2>
+      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold">Jugging El Cap</h2>
       <p class="py-4">
         A handful of disabled ascents have been made on El Cap. The vast majority of them have been jugged.
       </p>
@@ -113,9 +113,9 @@
     </div>
   </section>
   <div class="flex flex-col md:flex-row-reverse">
-    <h2 class="md:hidden text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl p-4">Time is slipping</h2>
+    <h2 class="md:hidden text-5xl sm:text-6xl md:text-7xl lg:text-8xl p-4">Time is slipping</h2>
     <div class="md:w-1/2 px-4 sm:px-8 xl:px-10 py-4 md:py-8 xl:pt-20 order-3">
-      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl hidden md:block">Time is slipping</h2>
+      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl hidden md:block">Time is slipping</h2>
       <div class="md:mt-10 space-y-4">
         <p>
           Melissa wants to join the ranks of the outdoor climbing elite with a "first" on El Capitan. Although Melissa
