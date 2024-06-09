@@ -23,7 +23,6 @@
       Story
     </h2>
     <div class="picture-left">
-      <!-- <div class="picture-left 2xs:px-4 xs:px-8 md:px-0 pr-0"> -->
       <Picture
         class="object-cover object-center"
         avif={story_avif}
@@ -35,7 +34,6 @@
     <div
       class="content-right space-y-4 xl:place-content-start self-start z-2 md:z-auto pr-0 xl:pr-28 xl:absolute xl:-top-16"
     >
-      <!-- class="content-right space-y-4 xl:place-content-start self-start z-2 md:z-auto 2xs:px-4 xs:px-8 md:px-0 pr-0 xl:pr-28 xl:absolute xl:-top-16" -->
       <h2 class="text-8xl font-bold mb-4 hidden xl:block">Story</h2>
       <div class="space-y-2 p-0 font-normal">
         <p>
