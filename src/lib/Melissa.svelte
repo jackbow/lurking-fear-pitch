@@ -14,7 +14,7 @@
   import Picture from './Picture.svelte';
 </script>
 
-<section id="story" class="min-h-fit bg-black text-gray-100 pt-20 xl:pl-40 space-y-20">
+<section id="story" class="min-h-fit bg-black text-gray-100 pt-32 xl:pl-40 space-y-20">
   <!-- "Story" -->
   <div
     class="relative container px-0 sm:px-8 xl:px-0 mx-auto max-w-screen-md xl:max-w-max justify-items-end flex flex-col justify-center xl:grid items-center gap-0 xl:gap-2 h-full"
@@ -22,7 +22,7 @@
     <h2 class="text-8xl font-bold mb-4 xl:hidden place-content-start self-start pl-4 -top-16 absolute xl:static">
       Story
     </h2>
-    <div class="picture-left px-8 md:px-0">
+    <div class="picture-left 2xs:px-4 xs:px-8 md:px-0 pr-0">
       <Picture
         class="object-cover object-center"
         avif={story_avif}
@@ -32,10 +32,10 @@
       />
     </div>
     <div
-      class="content-right space-y-4 xl:place-content-start self-start z-2 md:z-auto 2xs:px-4 xs:px-8 md:px-0 pr-0 xl:pr-16 xl:pr-28"
+      class="content-right space-y-4 xl:place-content-start self-start z-2 md:z-auto 2xs:px-4 xs:px-8 md:px-0 pr-0 xl:pr-28 xl:absolute xl:-top-16"
     >
       <h2 class="text-8xl font-bold mb-4 hidden xl:block">Story</h2>
-      <div class="space-y-2 bg-black bg-opacity-50 p-0 xl:p-2 font-normal">
+      <div class="space-y-2 p-0 font-normal">
         <p>
           Melissa Ruiz is one of the best paraclimbers in the world. She put a harness on for the first time in 2018 and
           she's already competing at the highest levels of the sport, having just won silver at the 2023 IFSC World
@@ -52,9 +52,18 @@
   </div>
   <!-- "Meet Melissa" -->
 </section>
-<section id="melissa" class="bg-black text-gray-100 pt-20 pl-40 space-y-20">
-  <div class="container justify-items-end grid gap-2 w-full h-[80rem] items-start">
-    <div class="col-start-8 col-span-6 row-start-1 row-span-8 z-10">
+<section id="melissa" class="bg-black text-gray-100 pt-32 xl:pl-40 space-y-20 pb-32">
+  <div
+    class="relative container px-0 sm:px-8 xl:px-0 mx-auto max-w-screen-md xl:max-w-max justify-items-end xl:grid flex flex-col flex-wrap sm:flex-row justify-center sm:justify-start xl:justify-center sm:items-start gap-0 sm:gap-4 xl:gap-2 h-full"
+  >
+    <h2
+      class="text-7xl md:text-8xl font-bold xl:hidden place-content-start self-start pl-4 sm:pl-0 -top-16 xs:-top-14 sm:-top-12 w-screen md:-top-8 absolute sm:static z-20"
+    >
+      Meet Melissa
+    </h2>
+    <div
+      class="col-start-8 col-span-6 row-start-1 row-span-8 z-10 px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0 sm:w-1/2 md:w-auto"
+    >
       <Picture
         class="object-cover object-center"
         avif={melissa_1_avif}
@@ -64,10 +73,10 @@
       />
     </div>
     <div
-      class="content-left space-y-2 place-content-start md:mr-40 z-20 p-5 md:z-20 px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0"
+      class="flex-1 content-left xl:space-y-2 place-content-start xl:mr-40 z-20 pt-2 sm:pt-0 md:z-20 px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0"
     >
-      <h2 class="text-8xl font-bold mb-4">Meet Melissa</h2>
-      <span class="space-y-2 font-normal">
+      <h2 class="text-8xl font-bold mb-4 hidden xl:block min-w-max">Meet Melissa</h2>
+      <div class="space-y-2 font-normal">
         <p>
           Melissa's cerebral palsy mostly affects her legs, her core, her vision… and her memory (she's actually not
           sure if that last one is the CP, or just her). Movies take too long and it's hard to follow the plot, so she
@@ -79,9 +88,9 @@
           doesn't really like working with kids. She grew up in New York City's foster care system and had five adopted
           brothers and sisters. Her humor is dark, but she's got a smile that lights up the room.
         </p>
-      </span>
+      </div>
     </div>
-    <div class="col-start-1 col-span-8 row-start-7 row-span-7 z-0 pr-8">
+    <div class="col-start-1 col-span-8 row-start-7 row-span-7 z-0 pr-8 hidden xl:block">
       <Picture
         class="object-cover object-center"
         avif={melissa_3_avif}
@@ -90,7 +99,7 @@
         alt="Portrait of Melissa Ruiz"
       />
     </div>
-    <div class="col-start-6 col-span-5 row-start-11 row-span-7 z-20">
+    <div class="col-start-6 col-span-5 row-start-11 row-span-7 z-20 hidden xl:block">
       <Picture
         class="object-cover object-center"
         avif={melissa_5_avif}
