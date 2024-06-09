@@ -16,55 +16,27 @@
   }).format;
 </script>
 
-<section id="budget">
-  <div class="flex flex-col flex-wrap justify-center items-center bg-black text-white px-20 pb-24">
-    <h2 class="text-8xl font-sans font-extrabold pt-20">Budget</h2>
-    <!-- <div class="overflow-x-auto w-1/3 text-white">
-      <table class="table text-white">
-        <thead class="text-white font-extrabold text-2xl">
-          <tr>
-            <th>Category</th>
-            <th>Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          {#each budgets as { category, price }}
-            <tr>
-              <th>{category}</th>
-              <td>{usd(price)}</td>
-            </tr>
-          {/each}
-        </tbody>
-      </table>
-    </div> -->
-    <div class="px-4 sm:px-6 lg:px-8 w-1/2">
+<section id="crew" class="bg-black text-white pt-20">
+  <div class="flex flex-col flex-wrap itesm-justify-center px-4 md:px-8 lg:px-20 mx-auto pb-20">
+    <h2 class="text-5xl sm:text-5xl md:text-6xl lg:text-8xl font-sans font-extrabold self-start">Budget</h2>
+    <div class="px-4 sm:px-6 lg:px-8 self-start w-full xl:w-2/3">
       <div class="-mx-4 mt-8 flow-root sm:mx-0">
         <table class="min-w-full">
           <colgroup>
             <col class="w-full sm:w-1/2" />
             <col class="sm:w-1/6" />
-            <col class="sm:w-1/6" />
           </colgroup>
-          <!-- <thead class="border-b border-gray-300 text-gray-100">
-            <tr>
-              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-xl font-extrabold text-gray-100 sm:pl-0"
-                >Category</th
-              >
-              <th scope="col" class="hidden px-3 py-3.5 text-right text-xl font-extrabold text-gray-100 sm:table-cell"
-                >Projected Cost</th
-              >
-            </tr>
-          </thead> -->
           <tbody>
             {#each budgets as { category, price, desc }}
               <tr class="border-b border-gray-200">
-                <td class="max-w-0 py-5 pl-4 pr-3 text-xl sm:pl-0">
+                <td class="max-w-0 py-5 pl-4 pr-3 text-sm xl:text-xl sm:pl-0">
                   <div class="font-bold text-gray-100">{category}</div>
                   {#if desc}
                     <div class="mt-1 truncate text-gray-400 font-normal">{desc}</div>
                   {/if}
                 </td>
-                <td class="font-normal hidden px-3 py-5 text-right text-lg text-gray-400 sm:table-cell">{usd(price)}</td
+                <td class="font-normal px-3 py-5 text-right text-sm xl:text-lg text-gray-400 sm:table-cell"
+                  >{usd(price)}</td
                 >
               </tr>
             {/each}
