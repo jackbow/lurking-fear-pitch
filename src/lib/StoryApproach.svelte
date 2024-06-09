@@ -34,19 +34,21 @@
   ];
 </script>
 
-<section id="story-approach">
-  <div class="flex flex-col items-center justify-center bg-black text-white">
-    <h2 class="text-8xl font-sans font-extrabold pt-20 self-start pl-20">Story Approach</h2>
-    <div class="px-20 flex gap-12 p-12">
+<section id="story-approach" class=" pt-20 bg-black text-white">
+  <div class="w-full sm:w-3/4 md:w-2/3 lg:w-full flex flex-col items-center justify-center px-4 md:px-8 mx-auto">
+    <h2 class="font-sans font-extrabold self-start text-5xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl">
+      Story Approach
+    </h2>
+    <div class="flex flex-col lg:flex-row pt-6 gap-8 lg:gap-12">
       <!-- TODO: pictures? -->
       <!-- {#each content as { title, description, avif, webp, jpg, alt }, index} -->
       {#each content as { title, description }, index}
-        <div class="h-fit w-1/3">
+        <div class="h-fit w-full lg:w-1/3">
           <!-- <Picture class="" {avif} {webp} {jpg} {alt} /> -->
           <!-- <div class="p-8 border-white border border-t-0"> -->
           <div class="p-8 border-white border">
             <h3 class="text-2xl font-extrabold pb-4">{index + 1}. {title}</h3>
-            <p>
+            <p class="font-normal">
               {description}
             </p>
           </div>
