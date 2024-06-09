@@ -15,7 +15,32 @@
 </script>
 
 <section id="plan">
-  <section class="relative">
+  <section class="relative md:hidden block bg-black text-white">
+    <h2 class="pl-8 text-6xl md:text-7xl text-left self-start absolute -top-10 sm:-top-12">EL CAPITAN</h2>
+    <Picture
+      class="w-screen object-cover object-left-top h-[30rem]"
+      avif={el_capitan_avif}
+      webp={el_capitan_webp}
+      jpg={el_capitan_jpg}
+      alt="El Capitan, with the Lurking Fear route highlighted."
+    />
+    <div class="px-4 sm:px-8 space-y-2 pt-2 font-normal">
+      <p>
+        If Yosemite National Park is the world mecca of climbing, El Capitan is the crown jewel. People have been
+        climbing and breaking records on the 3,000 foot monster since 1958. In 1993, Lynn Hill made history as the first
+        person to free climb the route known as 'The Nose'. In 2001, Chelsea Griffie became the first Black woman to
+        ascend El Cap. And of course, climbing legend Alex Honnold Free Solo'd the route 'Freerider' in 2016.
+      </p>
+      <p>
+        But the climbing community in Yosemite has a unique and turbulent history, one which has led the atmosphere
+        today to be one of insularity and exclusion. Though this culture isn’t always specifically ableist, it gives
+        rise to a preconceived notion of who belongs – who should be able to climb, and who shouldn’t. To have someone
+        like Melissa attempting this climb represents a cultural shift and will spark the types of clashes necessary for
+        change.
+      </p>
+    </div>
+  </section>
+  <section class="relative hidden md:block">
     <Picture
       class="w-screen object-cover object-left-top h-[50rem]"
       avif={el_capitan_avif}
@@ -24,66 +49,74 @@
       alt="El Capitan, with the Lurking Fear route highlighted."
     />
     <div
-      class="text-white text-left absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex flex-col items-center pt-40 pl-80 pr-96 font-extrabold gap-8"
+      class="text-white text-left absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex flex-col justify-center items-center font-extrabold gap-8"
     >
-      <h2 class="text-9xl capitalize opacity-50 text-left self-start">EL CAPITAN</h2>
-      <span class="opacity-80 text-lg space-y-12 pr-12 pl-2">
-        <p>
-          If Yosemite National Park is the world mecca of climbing, El Capitan is the crown jewel. People have been
-          climbing and breaking records on the 3,000 foot monster since 1958. In 1993, Lynn Hill made history as the
-          first person to free climb the route known as 'The Nose'. In 2001, Chelsea Griffie became the first Black
-          woman to ascend El Cap. And of course, climbing legend Alex Honnold Free Solo'd the route 'Freerider' in 2016.
-        </p>
-        <p>
-          But the climbing community in Yosemite has a unique and turbulent history, one which has led the atmosphere
-          today to be one of insularity and exclusion. Though this culture isn’t always specifically ableist, it gives
-          rise to a preconceived notion of who belongs – who should be able to climb, and who shouldn’t. To have someone
-          like Melissa attempting this climb represents a cultural shift and will spark the types of clashes necessary
-          for change.
-        </p>
-      </span>
+      <div class="flex flex-col items-center mr-4 sm:mr-8 md:mr-12 lg:mr-32 w-2/3 xl:w-3/5 mx-auto">
+        <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl capitalize opacity-50 text-left self-start">
+          EL CAPITAN
+        </h2>
+        <span class="opacity-80 text-lg space-y-2 pl-1 xl:pl-2">
+          <p>
+            If Yosemite National Park is the world mecca of climbing, El Capitan is the crown jewel. People have been
+            climbing and breaking records on the 3,000 foot monster since 1958. In 1993, Lynn Hill made history as the
+            first person to free climb the route known as 'The Nose'. In 2001, Chelsea Griffie became the first Black
+            woman to ascend El Cap. And of course, climbing legend Alex Honnold Free Solo'd the route 'Freerider' in
+            2016.
+          </p>
+          <p>
+            But the climbing community in Yosemite has a unique and turbulent history, one which has led the atmosphere
+            today to be one of insularity and exclusion. Though this culture isn’t always specifically ableist, it gives
+            rise to a preconceived notion of who belongs – who should be able to climb, and who shouldn’t. To have
+            someone like Melissa attempting this climb represents a cultural shift and will spark the types of clashes
+            necessary for change.
+          </p>
+        </span>
+      </div>
     </div>
   </section>
-  <div class="bg-black h-[60rem] text-white pl-40 pt-24">
-    <h2 class="text-8xl font-extrabold">Jugging El Cap</h2>
-    <p class="py-4">
-      A handful of disabled ascents have been made on El Cap. The vast majority of them have been jugged.
-    </p>
-    <div class="flex w-3/4 gap-12 pt-2">
-      <div>
-        <p class="pb-8">
-          <strong>JUGGING:</strong> Using a tool called an ascender to pull yourself up a rope that has been set in place,
-          or fixed, by a leader. This is the most common form used by people who are either new to big wall climbing or unable
-          to lead. It is a legitimate way to reach the top, but some with a more traditional or ableist mindset argue it
-          "doesn't count".
-        </p>
-        <Picture
-          avif={melissa_jugging_avif}
-          webp={melissa_jugging_webp}
-          jpg={melissa_jugging_jpg}
-          alt="Melissa jugging."
-        />
-      </div>
-      <div>
-        <p class="pb-8">
-          <strong>LEADING:</strong> Being the first climber in a group to climb up the wall, placing protective gear as you
-          go. This person is the most at risk for injury due to the length they can fall if they make a mistake or lose strength.
-          Melissa is wants to lead Lurking Fear, which will be a huge challenge — but groundbreaking for the paraclimbing
-          community.
-        </p>
-        <Picture
-          avif={melissa_leading_avif}
-          webp={melissa_leading_webp}
-          jpg={melissa_leading_jpg}
-          alt="Melissa lead climbing."
-        />
+  <section class="bg-black text-white py-16">
+    <div class="flex items-start w-full px-4 sm:px-8 md:px-0 md:w-5/6 mx-auto flex-col">
+      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold">Jugging El Cap</h2>
+      <p class="py-4">
+        A handful of disabled ascents have been made on El Cap. The vast majority of them have been jugged.
+      </p>
+      <div class="flex flex-col md:flex-row w-full xl:w-3/4 gap-2 md:gap-12">
+        <div>
+          <p class="pb-4 md:pb-12 font-normal">
+            <strong>JUGGING:</strong> Using a tool called an ascender to pull yourself up a rope that has been set in place,
+            or fixed, by a leader. This is the most common form used by people who are either new to big wall climbing or
+            unable to lead. It is a legitimate way to reach the top, but some with a more traditional or ableist mindset
+            argue it "doesn't count".
+          </p>
+          <Picture
+            avif={melissa_jugging_avif}
+            webp={melissa_jugging_webp}
+            jpg={melissa_jugging_jpg}
+            alt="Melissa jugging."
+          />
+        </div>
+        <div>
+          <p class="pb-4 md:pb-12 font-normal">
+            <strong>LEADING:</strong> Being the first climber in a group to climb up the wall, placing protective gear as
+            you go. This person is the most at risk for injury due to the length they can fall if they make a mistake or
+            lose strength. Melissa is wants to lead Lurking Fear, which will be a huge challenge — but groundbreaking for
+            the paraclimbing community.
+          </p>
+          <Picture
+            avif={melissa_leading_avif}
+            webp={melissa_leading_webp}
+            jpg={melissa_leading_jpg}
+            alt="Melissa lead climbing."
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <div class="flex flex-row h-[60rem]">
-    <div class="w-1/2 p-8 mt-20">
-      <h2 class="text-9xl">Time is slipping</h2>
-      <div class="mt-12 space-y-6 px-10">
+  </section>
+  <div class="flex flex-col md:flex-row-reverse">
+    <h2 class="md:hidden text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl p-4">Time is slipping</h2>
+    <div class="md:w-1/2 px-4 sm:px-8 xl:px-10 py-4 md:py-8 xl:pt-20 order-3">
+      <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl hidden md:block">Time is slipping</h2>
+      <div class="md:mt-10 space-y-4">
         <p>
           Melissa wants to join the ranks of the outdoor climbing elite with a "first" on El Capitan. Although Melissa
           is dominating her sport indoors, only about 50% of the hundreds of climbers who attempt El Cap successfully
@@ -100,7 +133,7 @@
       </div>
     </div>
     <Picture
-      class="object-cover object-left-top w-full h-[60rem]"
+      class="object-cover object-left-top w-full h-96 md:h-full px-2 md:px-0"
       avif={melissa_7_avif}
       webp={melissa_7_webp}
       jpg={melissa_7_jpg}
@@ -108,42 +141,6 @@
     />
   </div>
 </section>
-
-<!-- <section id="story" class=" min-h-fit bg-black text-gray-100 pt-20 pl-40 pb-40">
-  <div class="container justify-items-end grid items-center gap-2 h-full">
-    <div class="picture-left">
-      <picture>
-        <source type="image/avif" srcset={story_avif} />
-        <source type="image/webp" srcset={story_webp} />
-        <img
-          fetchpriority="high"
-          loading="eager"
-          class="object-cover object-center"
-          alt="The project logo"
-          src={story_jpg}
-        />
-      </picture>
-    </div>
-    <div
-      class="content-right space-y-2 place-content-start mr-40 self-start z-2 p-5 md:z-auto px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0"
-    >
-      <h2 class="text-8xl font-bold">El Capitan</h2>
-      <p>
-        If Yosemite National Park is the world mecca of climbing, El Capitan is the crown jewel. People have been
-        climbing and breaking records on the 3,000 foot monster since 1958. In 1993, Lynn Hill made history as the first
-        person to free climb the route known as 'The Nose'. In 2001, Chelsea Griffie became the first Black woman to
-        ascend El Cap. And of course, climbing legend Alex Honnold Free Solo'd the route 'Freerider' in 2016.
-      </p>
-      <p>
-        But the climbing community in Yosemite has a unique and turbulent history, one which has led the atmosphere
-        today to be one of insularity and exclusion. Though this culture isn’t always specifically ableist, it gives
-        rise to a preconceived notion of who belongs – who should be able to climb, and who shouldn’t. To have someone
-        like Melissa attempting this climb represents a cultural shift and will spark the types of clashes necessary for
-        change.
-      </p>
-    </div>
-  </div>
-</section> -->
 
 <style>
 </style>
