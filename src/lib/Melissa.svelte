@@ -17,12 +17,13 @@
 <section id="story" class="min-h-fit bg-black text-gray-100 pt-32 xl:pl-40 space-y-20">
   <!-- "Story" -->
   <div
-    class="relative container px-0 sm:px-8 xl:px-0 mx-auto max-w-screen-md xl:max-w-max justify-items-end flex flex-col justify-center xl:grid items-center gap-0 xl:gap-2 h-full"
+    class="relative container px-8 sm:px-8 xl:px-0 mx-auto max-w-screen-md xl:max-w-max justify-items-end flex flex-col justify-center xl:grid items-center gap-0 xl:gap-2 h-full"
   >
     <h2 class="text-8xl font-bold mb-4 xl:hidden place-content-start self-start pl-4 -top-16 absolute xl:static">
       Story
     </h2>
-    <div class="picture-left 2xs:px-4 xs:px-8 md:px-0 pr-0">
+    <div class="picture-left">
+      <!-- <div class="picture-left 2xs:px-4 xs:px-8 md:px-0 pr-0"> -->
       <Picture
         class="object-cover object-center"
         avif={story_avif}
@@ -32,8 +33,9 @@
       />
     </div>
     <div
-      class="content-right space-y-4 xl:place-content-start self-start z-2 md:z-auto 2xs:px-4 xs:px-8 md:px-0 pr-0 xl:pr-28 xl:absolute xl:-top-16"
+      class="content-right space-y-4 xl:place-content-start self-start z-2 md:z-auto pr-0 xl:pr-28 xl:absolute xl:-top-16"
     >
+      <!-- class="content-right space-y-4 xl:place-content-start self-start z-2 md:z-auto 2xs:px-4 xs:px-8 md:px-0 pr-0 xl:pr-28 xl:absolute xl:-top-16" -->
       <h2 class="text-8xl font-bold mb-4 hidden xl:block">Story</h2>
       <div class="space-y-2 p-0 font-normal">
         <p>
@@ -54,16 +56,14 @@
 </section>
 <section id="melissa" class="bg-black text-gray-100 pt-32 xl:pl-40 space-y-20 pb-32">
   <div
-    class="relative container px-0 sm:px-8 xl:px-0 mx-auto max-w-screen-md xl:max-w-max justify-items-end xl:grid flex flex-col flex-wrap sm:flex-row justify-center sm:justify-start xl:justify-center sm:items-start gap-0 sm:gap-4 xl:gap-2 h-full"
+    class="relative container px-8 sm:px-8 xl:px-0 mx-auto max-w-screen-md xl:max-w-max justify-items-end xl:grid flex flex-col flex-wrap sm:flex-row justify-center sm:justify-start xl:justify-center sm:items-start gap-0 sm:gap-4 xl:gap-2 h-full"
   >
     <h2
-      class="text-7xl md:text-8xl font-bold xl:hidden place-content-start self-start pl-4 sm:pl-0 -top-16 xs:-top-14 sm:-top-12 w-screen md:-top-8 absolute sm:static z-20"
+      class="text-7xl md:text-8xl font-bold xl:hidden place-content-start self-start pl-4 sm:pl-0 -top-16 xs:-top-14 sm:-top-20 md:-top-24 w-screen sm:w-1/2 absolute z-20"
     >
       Meet Melissa
     </h2>
-    <div
-      class="col-start-8 col-span-6 row-start-1 row-span-8 z-10 px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0 sm:w-1/2 md:w-auto"
-    >
+    <div class="col-start-8 col-span-6 row-start-1 row-span-8 z-10 sm:w-1/2 xl:w-auto">
       <Picture
         class="object-cover object-center"
         avif={melissa_1_avif}
@@ -72,10 +72,8 @@
         alt="Portrait of Melissa Ruiz"
       />
     </div>
-    <div
-      class="flex-1 content-left xl:space-y-2 place-content-start xl:mr-40 z-20 pt-2 sm:pt-0 md:z-20 px-2 2xs:px-4 xs:px-8 sm:px-10 md:px-0"
-    >
-      <h2 class="text-8xl font-bold mb-4 hidden xl:block min-w-max">Meet Melissa</h2>
+    <div class="flex-1 content-left xl:space-y-2 place-content-start xl:mr-40 z-20 pt-2 sm:pt-0 md:z-20 px-2">
+      <h2 class="text-8xl font-bold mb-4 hidden xl:block xl:min-w-max">Meet Melissa</h2>
       <div class="space-y-2 font-normal">
         <p>
           Melissa's cerebral palsy mostly affects her legs, her core, her vision… and her memory (she's actually not
