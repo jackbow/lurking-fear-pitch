@@ -57,7 +57,7 @@
     class="relative container px-4 sm:px-8 xl:px-0 mx-auto max-w-screen-md xl:max-w-max justify-items-end xl:grid flex flex-col flex-wrap sm:flex-row justify-center sm:justify-start xl:justify-center sm:items-start gap-0 sm:gap-4 xl:gap-2 h-full"
   >
     <h2
-      class="text-7xl md:text-8xl font-bold xl:hidden place-content-start self-start pl-4 sm:pl-0 -top-16 xs:-top-14 sm:-top-20 md:-top-24 w-screen sm:w-1/2 absolute z-20"
+      class="text-7xl md:text-8xl font-bold xl:hidden place-content-start self-start pl-4 sm:pl-0 -top-16 xs:-top-14 sm:-top-20 md:-top-24 sm:w-1/2 absolute z-20"
     >
       Meet Melissa
     </h2>
