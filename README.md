@@ -4,15 +4,13 @@
 
 Need
 
-- [ ] domain, env vars in prod, social image
+- [ ] social image (index.html)
 - [ ] favicon
-- [ ] remove unused styles from story.svelte
-- [ ] mobile layout
-- [x] section buttons in middle of hero? + fix nav bar / mobile hamburger menu
-- [x] fonts
-  - different fonts?
-- [ ] normalize h1, h2, p sizes & padding between paragraphs/headers (can be set in app.postcss, also main gap/padding/spacing...)
-- [x] redo nav & section names
+- [ ] fix ios video playback (probably need another video source (compressed mp4? vp9/webm should work but doesnt...)
+- [ ] better fonts
+- [ ] domain
+- [ ] givebutter widget/acct keys on cloudflare
+
 
 Nice to have
 
@@ -21,4 +19,4 @@ Nice to have
 - [ ] figure out if sveltekit is better for SEO (ssr for crawlers...)
 - [ ] parallax text / image scrolling?
   - https://codepen.io/openmindculture/pen/wvQevbd
-- [ ] social previews
+- [ ] dedupe css
