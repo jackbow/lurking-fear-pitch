@@ -1,8 +1,9 @@
 <script lang="ts">
-  import vp9 from '~/assets/videos/melissa_2_vp9.webm';
-</script>
+  import hero_jpg from '~/assets/images/hero.jpg';
+   import vp9 from '~/assets/videos/melissa_2_vp9.webm';
+ </script>
 
-<video autoplay muted loop playsinline class="h-screen w-screen object-cover object-center">
+ <video poster={hero_jpg} autoplay muted loop playsinline class="h-screen w-screen object-cover object-center">
   <source src={vp9} type="video/webm" />
 </video>
 <div
