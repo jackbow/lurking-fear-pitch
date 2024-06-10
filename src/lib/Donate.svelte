@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section id="donate" class="flex flex-col justify-center items-center bg-white px-8 md:px-20 pb-12 gap-6">
+<section id="donate" class="text-black flex flex-col justify-center items-center bg-white px-8 md:px-20 pb-12 gap-6">
   <h2 class="pt-20 text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-sans font-extrabold">Thank You</h2>
   <div class="space-y-2 text-center font-normal text-lg">
     <p>
