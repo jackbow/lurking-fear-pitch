@@ -112,7 +112,7 @@
       </div>
     </div>
   </section>
-  <div class="flex flex-col md:flex-row-reverse">
+  <div class="flex flex-col md:flex-row-reverse bg-white text-black">
     <h2 class="md:hidden text-5xl sm:text-6xl md:text-7xl lg:text-8xl p-4">Time is slipping</h2>
     <div class="md:w-1/2 px-4 sm:px-8 xl:px-10 py-4 md:py-8 xl:pt-20 order-3">
       <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl hidden md:block">Time is slipping</h2>
