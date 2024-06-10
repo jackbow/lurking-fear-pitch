@@ -1,19 +1,11 @@
 <script lang="ts">
-  import hero_webp from '~/assets/images/hero.webp';
-  import hero_avif from '~/assets/images/hero.avif';
   import hero_jpg from '~/assets/images/hero.jpg';
-  import Picture from './Picture.svelte';
+  import vp9 from '~/assets/videos/melissa_2_vp9.webm';
 </script>
 
-<Picture
-  class="h-screen w-screen object-cover object-center"
-  avif={hero_avif}
-  webp={hero_webp}
-  jpg={hero_jpg}
-  alt="Melissa Ruiz climbing, shot from above"
-  loading="eager"
-  fetchpriority="high"
-/>
+<video poster={hero_jpg} autoplay muted loop class="h-screen w-screen object-cover object-center">
+  <source src={vp9} type="video/webm" />
+</video>
 <div
   class="text-white absolute top-0 text-center left-0 w-full h-screen bg-black bg-opacity-30 flex flex-col justify-center items-center gap-4"
 >
